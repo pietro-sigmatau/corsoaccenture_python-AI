@@ -1,4 +1,4 @@
 nomi = {"anna", "luca", "ciccio"}
-maiuscoli=(nome.upper() for nome in nomi)
+maiuscoli=[nome.title() for nome in nomi]
 
 print(maiuscoli)
