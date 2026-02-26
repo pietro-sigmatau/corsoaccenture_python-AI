@@ -7,6 +7,16 @@ prodotti = [
 
 #dizionario per id, preparazione dei dati, si crea l'indice
 
-indice={p["id"]: p for p in prodotti}
+#indice={p["id"]: p for p in prodotti}
 
-print(indice)
+#print(indice)
+
+with open ("dati.csv", "w", newline='') as csvfile:
+    colonne = ["id", "nome", "prezzo"]
+    writer = csv.DictWriter(csvfile, fieldnames=colonne)
+
+    writer.writeheader()
+    write.writerows(prodotti)
+
+    for p in prodotti:
+        writer.writerow(p)

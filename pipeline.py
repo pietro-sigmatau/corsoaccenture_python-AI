@@ -47,3 +47,4 @@ sommati=somma(dati)
 print("Somma", sommati)
 
 main()
+
