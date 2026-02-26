@@ -1,4 +1,1 @@
-Mario
-Luca
-Ciccio
-Giulia
+Nome,Eta,Citta,Categoria
