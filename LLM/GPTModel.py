@@ -3,5 +3,5 @@ from LLM.LLM_model import LLMModel
 
 class GPTModel(LLMModel):
 
-    def genera(self, prompt):
+    def genera_risposta(self, prompt):
         return f"Risposta locale per {prompt}"

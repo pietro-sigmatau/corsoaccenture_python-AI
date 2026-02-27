@@ -1,4 +1,4 @@
-from OpenAIEmbeddingModel import EmbeddingModel
+from EmbeddingModel import EmbeddingModel
 
 class OpenAIEmbedding(EmbeddingModel):
 
