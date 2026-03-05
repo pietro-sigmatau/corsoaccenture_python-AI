@@ -66,7 +66,7 @@ X_meta_dense = np.hstack([
 X_final = hstack([X_text, csr_matrix(X_meta_dense)])
 
 # 7) NearestNeighbors (niente algorithm=...)
-model = NearestNeighbors(metric="cosine", n_neighbors=50)
+model = NearestNeighbors(metric="euclidean", n_neighbors=50)
 model.fit(X_final)
 
 # 8) niente .to_dict(): usiamo show_id come index
@@ -95,7 +95,7 @@ def recommend_by_show_id(show_id: str, k: int = 10, same_type: bool = False) -> 
 
 # TEST
 test_id = df["show_id"].iloc[0]
-test_id = "s1101"
+test_id = "s5236"
 print("Seed:")
 print(df.loc[test_id, ["show_id", "title", "type"]])
 
